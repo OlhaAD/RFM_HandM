@@ -127,3 +127,24 @@ Die Datenbank ist in drei Dateien unterteilt: ArticlesHM, CustomersHM und Transa
 - **sales_channel_id:** Vertriebskanal, Datentyp - int64
 Diese Dateien wurden zuvor von Fehlern und Auslassungen bereinigt und außerdem für die Analyse im vorherigen Projekt aggregiert. In diesem Projekt liegt der Schwerpunkt auf der Entwicklung und Implementierung der RFM-Analyse.
 ### Implementierung der RFM-Analyse
+Die RFM-Analyse ist ein Marketinginstrument, das zur Segmentierung von Kunden und zur Bestimmung von Kundengruppen basierend auf ihrer bisherigen Kaufaktivität verwendet wird. Diese Analysemethode basiert auf drei Hauptparametern, die den Namen RFM geben:
+- **Recency (Aktualität)** – wie kürzlich ein Kunde den letzten Kauf getätigt hat. Kunden, die kürzlich gekauft haben, sind wahrscheinlicher auf neue Angebote ansprechbar. Es ist wichtig zu verstehen, wie lange Kunden aktiv bleiben.
+- **Frequency (Häufigkeit)** – wie oft ein Kunde innerhalb eines bestimmten Zeitraums kauft. Kunden, die häufiger einkaufen, sind wahrscheinlich loyaler und wertvoller für das Unternehmen.
+- **Monetary (Monetärer Wert)** – die Gesamtsumme des Geldes, die ein Kunde ausgegeben hat. Dieser Parameter hilft zu bestimmen, welche Kunden den größten Umsatz generieren.
+
+Der Einsatz der RFM-Analyse ermöglicht Unternehmen:
+- Die Wahrscheinlichkeit von Antworten auf Marketingaktionen zu erhöhen, indem Angebote an die aussichtsreichsten Kunden gerichtet werden.
+- Die Personalisierung von Angeboten zu verbessern, indem Angebote erstellt werden, die den spezifischen Bedürfnissen verschiedener Segmente entsprechen.
+- Die allgemeine Effektivität von Marketinganstrengungen zu steigern, indem Ressourcen optimiert und auf die profitabelsten Kunden konzentriert werden.
+
+#### Segmentierung der Kunden nach Kaufhäufigkeit
+Die Analyse basiert auf Transaktionsdaten der letzten zwei Jahre. Das Histogramm und das Boxplot zeigen die Verteilung der Anzahl der Käufe pro Kunde.
+
+![AnzahlVerkaufeProKundeHistAndBoxPlot](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/AnzahlVerk%C3%A4ufeProKundeHistAndBoxPlot.png)
+
+Basierend auf diesen Daten wurden die Kunden in vier Gruppen eingeteilt:
+- **Sehr aktive Kunden:** Haben mehr als 27 Käufe im gesamten Zeitraum getätigt. Diese Gruppe nähert sich dem oberen Quantil und zeigt eine hohe Kaufhäufigkeit.
+- **Aktive Kunden:** Haben zwischen 10 und 26 Käufen in zwei Jahren getätigt. Diese Gruppe liegt zwischen dem Median und dem oberen Quantil und zeigt eine mäßig hohe Aktivität.
+- **Mäßig aktive Kunden:** Haben zwischen 4 und 9 Käufen getätigt. Der Bereich dieser Kunden liegt zwischen dem ersten Quantil und dem Median und spiegelt eine moderate Kauftätigkeit wider.
+- **Weniger aktive Kunden:** Haben weniger als 3 Käufe getätigt. Diese Kunden liegen unter dem ersten Quantil und zeigen eine geringe Kaufhäufigkeit.
+
