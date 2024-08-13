@@ -137,6 +137,45 @@ Der Einsatz der RFM-Analyse ermöglicht Unternehmen:
 - Die Personalisierung von Angeboten zu verbessern, indem Angebote erstellt werden, die den spezifischen Bedürfnissen verschiedener Segmente entsprechen.
 - Die allgemeine Effektivität von Marketinganstrengungen zu steigern, indem Ressourcen optimiert und auf die profitabelsten Kunden konzentriert werden.
 
+#### Kundensegmentierung nach dem Zeitpunkt des letzten Kaufs
+Im Rahmen der RFM-Analyse ist die Bewertung der Rezente des letzten Kaufs eines Kunden (Recency) einer der Schlüsselindikatoren. Hierfür wurden Daten zu Käufen vom 20. September 2018 bis zum 22. September 2020 verwendet. Für jeden Kunden wurde die Anzahl der Tage seit seinem letzten Kauf bis zum letzten Datum in den Daten (22.09.2020) berechnet.
+
+```python
+Frühestes Datum: 2018-09-20 00:00:00
+Letztes Date: 2020-09-22 00:00:00
+```
+
+Die Daten wurden mittels eines Histogramms und eines Boxplots visualisiert, die die Verteilung der Tage seit dem letzten Kauf unter allen Kunden zeigen. Das Histogramm verdeutlicht, wie häufig Kunden für wiederholte Käufe zurückkehren, während der Boxplot Informationen über die Medianwerte und die Verteilung der Tage zwischen den Käufen bietet.
+
+Das Histogramm zeigt, dass die meisten Käufe innerhalb der ersten 100 Tage nach dem vorherigen Kauf getätigt werden, danach nimmt die Anzahl der Käufe mit der Zeit ab. Der Boxplot zeigt, dass der Medianwert bei 151 Tagen liegt, was darauf hinweist, dass die Hälfte aller Kunden innerhalb von etwa fünf Monaten nach dem letzten Kauf wiederholt kauft.
+
+![TageSeitLetztenKaufHistAndBoxPlot](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/TageSeitLetztenKaufHistAndBoxPlot.png)
+
+Basierend auf dem Histogramm der Verteilung der Tage seit dem letzten Kauf können die folgenden Gruppen für die Kundensegmentierung definiert werden:
+- **Sehr aktive Kunden:** Kunden, die innerhalb der letzten 30 Tage oder weniger einen Kauf getätigt haben.
+- **Aktive Kunden:** Kunden, die einen Kauf zwischen 31 und 100 Tagen getätigt haben.
+- **Mäßig aktive Kunden:** Kunden, die einen Kauf zwischen 101 und 365 Tagen getätigt haben.
+- **Langfristig inaktive Kunden:** Kunden, deren letzter Kauf mehr als ein Jahr zurückliegt.
+
+```python
+def recency_score(rec):
+  if rec > 365:
+    return 4
+  elif (rec > 100) and (rec <= 365):
+    return 3
+  elif (rec > 30) and (rec <= 100):
+    return 2
+  else:
+    return 1
+df_rfm['recency']= df_rfm['days_since_last_purchase'].apply(recency_score)
+```
+
+**Visualisierung der Verteilung der Kunden nach Recency-Gruppen**
+
+Der Graph zeigt, dass die meisten Kunden zur Gruppe 3 gehören, was darauf hinweist, dass ein erheblicher Teil der Kundenbasis im letzten Jahr Einkäufe getätigt hat. Es ist auch wichtig zu beachten, dass selbst in Gruppe 4, wo Kunden als langfristig inaktiv gelten, immer noch eine signifikante Anzahl von Kunden vorhanden ist, was auf das Potenzial hinweist, diese Kunden durch gezielte Marketingkampagnen wieder zu gewinnen.
+
+![RecencyVerteilung](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/RecencyGruppeHist.png)
+
 #### Segmentierung der Kunden nach Kaufhäufigkeit
 Die Analyse basiert auf Transaktionsdaten der letzten zwei Jahre. Das Histogramm und das Boxplot zeigen die Verteilung der Anzahl der Käufe pro Kunde.
 
