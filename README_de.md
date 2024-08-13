@@ -148,3 +148,24 @@ Basierend auf diesen Daten wurden die Kunden in vier Gruppen eingeteilt:
 - **Mäßig aktive Kunden:** Haben zwischen 4 und 9 Käufen getätigt. Der Bereich dieser Kunden liegt zwischen dem ersten Quantil und dem Median und spiegelt eine moderate Kauftätigkeit wider.
 - **Weniger aktive Kunden:** Haben weniger als 3 Käufe getätigt. Diese Kunden liegen unter dem ersten Quantil und zeigen eine geringe Kaufhäufigkeit.
 
+**Visualisierung der Kundenverteilung nach Kaufhäufigkeitsgruppen**
+Dieses Diagramm zeigt die Verteilung der H&M-Kunden nach vier Gruppen der Kaufhäufigkeit im Rahmen der RFM-Analyse. Die Gruppen sind basierend auf der Anzahl der Käufe definiert, die die Kunden im analysierten Zeitraum getätigt haben:
+- **Gruppe 1:** Kunden mit sehr hoher Kaufhäufigkeit.
+- **Gruppe 2:** Kunden mit hoher Kaufhäufigkeit.
+- **Gruppe 3:** Kunden mit mittlerer Kaufhäufigkeit.
+- **Gruppe 4:** Kunden mit niedriger Kaufhäufigkeit.
+
+Das Diagramm zeigt eine gleichmäßige Verteilung der Kunden über diese vier Gruppen, was die Vielfalt der Einkaufsaktivitäten in der Kundenbasis von H&M hervorhebt.
+
+![FrequencyGruppeVerteilung](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/FrequencyGruppeHist.png)
+
+#### Segmentierung der Kunden nach Ausgabesumme
+Die verwendeten Histogramme und Boxplots illustrieren die Verteilung der Gesamtausgaben der Kunden. Diese Visualisierungen ermöglichen es, deutlich zu sehen, wie die Ausgaben unter den verschiedenen Kundengruppen verteilt sind, und Haupttrends sowie Anomalien im Verbraucherverhalten zu identifizieren.
+
+![AusgabesummePerKundeHistBoxPlot](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/EinkaufssummeProKundeHistAndBoxPlot.png)
+
+Auf Basis dieser Daten wurden die Kunden in die folgenden vier Gruppen eingeteilt:
+- **Niedrige Ausgabensumme:** Kunden, deren Ausgaben unter dem ersten Quartil (Q1, weniger als 0.09) liegen. Diese Kunden geben deutlich weniger aus im Vergleich zu den anderen.
+- **Mittlere Ausgabensumme:** Die Hauptgruppe der Kunden, deren Ausgaben zwischen dem ersten und dritten Quartil (Q1 und Q3) liegen, was einem Betrag von 0.1 bis 0.7 entspricht. Diese Kunden repräsentieren das standardmäßige Verbraucherverhalten.
+- **Hohe Ausgabensumme:** Kunden, deren Ausgaben das dritte Quartil (Q3, 0.7) überschreiten, aber nicht den Bereich der Ausreißer erreichen, mit Ausgaben bis zu 1.5. Diese Kunden geben mehr als der Durchschnitt aus, und ihre Einkaufsaktivität könnte auf eine höhere Loyalität oder ein höheres Einkommen hinweisen.
+- **Sehr hohe Ausgabensumme:** Kunden, deren Ausgaben die oberen "Whisker" des Boxplots überschreiten, was als Ausreißer angesehen wird (mehr als 1.5). Dies sind die wertvollsten Kunden, die deutlich mehr als alle anderen ausgeben. Ihr Kaufverhalten könnte mit besonderen Anlässen verbunden sein, wie zum Beispiel Käufe im Rahmen großer Events oder eine hohe persönliche Treue zur Marke.
