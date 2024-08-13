@@ -169,3 +169,13 @@ Auf Basis dieser Daten wurden die Kunden in die folgenden vier Gruppen eingeteil
 - **Mittlere Ausgabensumme:** Die Hauptgruppe der Kunden, deren Ausgaben zwischen dem ersten und dritten Quartil (Q1 und Q3) liegen, was einem Betrag von 0.1 bis 0.7 entspricht. Diese Kunden repräsentieren das standardmäßige Verbraucherverhalten.
 - **Hohe Ausgabensumme:** Kunden, deren Ausgaben das dritte Quartil (Q3, 0.7) überschreiten, aber nicht den Bereich der Ausreißer erreichen, mit Ausgaben bis zu 1.5. Diese Kunden geben mehr als der Durchschnitt aus, und ihre Einkaufsaktivität könnte auf eine höhere Loyalität oder ein höheres Einkommen hinweisen.
 - **Sehr hohe Ausgabensumme:** Kunden, deren Ausgaben die oberen "Whisker" des Boxplots überschreiten, was als Ausreißer angesehen wird (mehr als 1.5). Dies sind die wertvollsten Kunden, die deutlich mehr als alle anderen ausgeben. Ihr Kaufverhalten könnte mit besonderen Anlässen verbunden sein, wie zum Beispiel Käufe im Rahmen großer Events oder eine hohe persönliche Treue zur Marke.
+
+**Visualisierung der Verteilung der Kunden nach Kaufsummen-Gruppen**
+
+Das dargestellte Histogramm zeigt die Verteilung der H&M-Kunden nach vier Gruppen, die auf der Basis ihrer Kaufsummen im Rahmen der RFM-Analyse gebildet wurden. Die Gruppen sind wie folgt definiert:
+- **Gruppe 1:** Kunden mit den höchsten Gesamtausgaben.
+- **Gruppe 2:** Kunden mit erheblichen Ausgaben, aber weniger als in der ersten Gruppe.
+- **Gruppe 3:** Kunden mit moderaten Ausgaben, die den größten Anteil im Diagramm ausmachen.
+- **Gruppe 4:** Kunden mit den geringsten Ausgaben, deren Anzahl deutlich geringer ist im Vergleich zu den anderen Gruppen.
+
+![MonetaryGruppeVerteilung](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/MonetaryGruppeHist.png)
