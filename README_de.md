@@ -218,3 +218,39 @@ Das dargestellte Histogramm zeigt die Verteilung der H&M-Kunden nach vier Gruppe
 - **Gruppe 4:** Kunden mit den geringsten Ausgaben, deren Anzahl deutlich geringer ist im Vergleich zu den anderen Gruppen.
 
 ![MonetaryGruppeVerteilung](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/MonetaryGruppeHist.png)
+
+### Kundensegmentierung
+
+Die erste Segmentierung der Kunden wird in der folgenden Visualisierung dargestellt. Das Diagramm zeigt die Verteilung der Kunden nach RFM-Segmenten basierend auf ihrem Verhalten. Die Segmente sind nach der Anzahl der Kunden sortiert, was es leicht macht, die größten Gruppen zu identifizieren.
+
+![PrimarySegmentierung](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/Prim%C3%A4reRFMAufteilungPlot.png)
+
+Es ist zu beachten, dass sich eine beträchtliche Anzahl von Segmenten mit einer geringen Kundenanzahl gebildet hat. Diese Segmente wurden in eine allgemeine Kategorie — Andere Gruppen — zusammengefasst. In einem nächsten Schritt werden die Segmente zu größeren Gruppen zusammengefasst, und alle kleinen Segmente werden ebenfalls berücksichtigt und in entsprechende Gruppen integriert. Laut der Visualisierung ist das Segment mit der größten Anzahl an Kunden das Segment 444. Dies sind hauptsächlich verlorene Kleinkunden, die ihre letzten Einkäufe vor mehr als einem Jahr getätigt haben, nicht mehr als drei Einkäufe gemacht haben und geringe Beträge (unter 0,09) ausgegeben haben.
+
+**Kombination von Segmenten und Erstellung zusammengefasster Kundengruppen:**
+
+1. **Abwandernde Kleinkunden:** Segmente 444, 434, 443, 433, 424. Diese Kunden haben seit mehr als einem Jahr keine Einkäufe getätigt und entweder wenige oder nur kleine Beträge ausgegeben.
+
+2. **Abwandernde Mittelkunden:** Segmente 423, 442, 432, 422, 413. Diese Kunden haben seit mehr als einem Jahr nichts mehr gekauft, hatten jedoch zuvor durchschnittliche Ausgaben zwischen 0,1 und 1,5.
+
+3. **Abwandernde VIP-Kunden:** Segmente 421, 411, 431, 412. Diese Kunden haben entweder eine große Anzahl von Käufen getätigt (über 28), wie im Segment 412, oder beträchtliche Beträge ausgegeben (über dem dritten Quartil), aber seit mehr als einem Jahr nichts mehr gekauft. Diese Gruppe erfordert besondere Aufmerksamkeit, da sie für das Geschäft von großem Wert ist.
+
+4. **Schlafende Kleinkunden:** Segmente 344, 343, 334, 324, 333. Diese Kunden haben seit mehr als 100 Tagen keine Einkäufe getätigt und hauptsächlich kleine Beträge ausgegeben. Dies sind Kunden mit geringer Aktivität und geringem Umsatzwert für das Unternehmen.
+
+5. **Schlafende Mittelkunden:** Segmente 323, 322, 313, 332, 342. Kunden, die seit mehr als 100 Tagen keine Einkäufe getätigt haben und durchschnittliche Ausgaben haben. Diese Gruppe umfasst Kunden mit moderater Aktivität und mittlerem Umsatzwert.
+
+6. **Schlafende VIP-Kunden:** Segmente 311, 331, 312, 321. Diese Kunden haben seit mehr als 100 Tagen keine Einkäufe getätigt, zeichnen sich jedoch durch sehr hohe Ausgaben oder eine große Anzahl von Käufen (über 28) aus. Diese Kunden haben trotz ihrer kürzlich mangelnden Aktivität einen hohen Wert für das Geschäft.
+
+7. **Aktive Kleinkunden:** Segmente 244, 144, 234, 143, 134, 243, 124, 224, 233, 133. Kunden, die in den letzten 100 Tagen eingekauft haben, jedoch nur kleine Beträge ausgegeben haben.
+
+8. **Regelmäßige Mittelkunden:** Segmente 123, 113, 213, 223, 222, 232, 132. Kunden, die in den letzten 100 Tagen Einkäufe getätigt haben, mit Ausgaben zwischen 0,1 und 1,5.
+
+9. **Regelmäßige Großkunden:** Segmente 212, 112, 122. Kunden, die in den letzten 100 Tagen Einkäufe getätigt haben, wobei die meisten von ihnen mehr als 28 Käufe getätigt und zwischen 0,7 und 1,5 ausgegeben haben.
+
+10. **VIP-Kunden:** Segmente 111, 211, 121, 221, 131, 231. Kunden, die in den letzten 100 Tagen Einkäufe mit sehr großen Beträgen (über 1,5) getätigt haben.
+
+**Visualisierung der Kundenverteilung nach den 10 konsolidierten RFM-Gruppen**
+
+Dieses Kreisdiagramm veranschaulicht die Verteilung der H&M-Kunden auf zehn konsolidierte RFM-Gruppen, die auf der Analyse von Recency, Frequency und Monetary basieren. Diese Gruppen repräsentieren verschiedene Ebenen der Kundenbindung und Aktivität, was es dem Unternehmen ermöglicht, seine Kundenbasis effektiv zu segmentieren und Marketingstrategien gezielt auf die entsprechenden Segmente auszurichten.
+
+![10GruppenRFM](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/RFMGroupen.png)
