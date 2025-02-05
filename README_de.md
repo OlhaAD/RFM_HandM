@@ -254,3 +254,42 @@ Es ist zu beachten, dass sich eine beträchtliche Anzahl von Segmenten mit einer
 Dieses Kreisdiagramm veranschaulicht die Verteilung der H&M-Kunden auf zehn konsolidierte RFM-Gruppen, die auf der Analyse von Recency, Frequency und Monetary basieren. Diese Gruppen repräsentieren verschiedene Ebenen der Kundenbindung und Aktivität, was es dem Unternehmen ermöglicht, seine Kundenbasis effektiv zu segmentieren und Marketingstrategien gezielt auf die entsprechenden Segmente auszurichten.
 
 ![10GruppenRFM](https://github.com/OlhaAD/RFM_HandM/blob/main/visualisations/RFMGroupen.png)
+
+### Analyse der Ergebnisse und Formulierung von Empfehlungen
+#### Abwandernde Kleinkunden
+Diese Kunden haben seit über einem Jahr keine Käufe getätigt, nur wenige Käufe zu geringen Beträgen gemacht. Der Gesamtanteil dieser Kunden beträgt 22% und die Gesamtzahl beläuft sich auf 299.874 Kunden. Die Wahrscheinlichkeit ihrer Rückkehr ist äußerst gering, und sie könnten die niedrigste Priorität für Marketinganstrengungen darstellen.
+```python
+rfm_segment	count	group
+47	424	311	Abwandernde Kleinkunden
+50	433	98742	Abwandernde Kleinkunden
+51	434	26418	Abwandernde Kleinkunden
+53	443	28145	Abwandernde Kleinkunden
+54	444	146258	Abwandernde Kleinkunden
+```
+
+#### Abwandernde Mittelkunden
+Diese Kunden haben seit über einem Jahr keine Käufe getätigt, tätigten jedoch früher Käufe in mittleren Beträgen (von 0,1 bis 1,5). Der Gesamtanteil dieser Kunden beträgt 4,4% und die Gesamtzahl beläuft sich auf 60.179 Kunden.
+```python
+	rfm_segment	count	group
+43	413	2585	Abwandernde Mittelkunden
+45	422	3232	Abwandernde Mittelkunden
+46	423	54217	Abwandernde Mittelkunden
+49	432	133	    Abwandernde Mittelkunden
+52	442	12	    Abwandernde Mittelkunden
+```
+Für Kunden, die in diese Kategorie fallen, ist es wichtig, Maßnahmen zu ergreifen, die darauf abzielen, sie erneut anzusprechen und zu aktivieren. Hier sind einige Schritte, die in Betracht gezogen werden können:
+
+- **Personalisierte Angebote:** Senden Sie diesen Kunden spezielle Angebote, wie Rabatte auf ihre Lieblingsprodukte oder Dienstleistungen, die sie früher gekauft haben. Ein personalisierter Ansatz kann ihnen helfen, sich an Produkte zu erinnern, die sie zuvor interessierten und neue Käufe anregen.
+- **Loyalitätsprogramme:** Bieten Sie Boni für die Rückkehr, wie zusätzliche Rabatte oder Punkte für die ersten Käufe nach einer langen Pause. Dies kann sie motivieren, erneut Einkäufe zu tätigen.
+- **Analyse der Abwanderungsgründe:** Dies könnte auf Unzufriedenheit mit Preisen, Servicequalität oder einem Wechsel der Interessen zurückzuführen sein. Diese Informationen helfen, die Marketinganstrengungen besser zu justieren.
+- **Verbesserung der Kommunikation:** Es ist notwendig, die regelmäßige Kommunikation durch E-Mail-Newsletter, Benachrichtigungen in der App oder über soziale Medien wieder aufzunehmen.
+- **Feedback einholen:** Es ist wichtig, von diesen Kunden Feedback zu erbitten, was sie zurück zu den Käufen bringen könnte. Dies kann wertvolle Informationen darüber liefern, was in Ihrer Marketingstrategie verbessert werden muss. Ziel dieser Maßnahmen ist es, den Kunden an die Marke zu erinnern, Wert für ihre Rückkehr zu schaffen und sie zu wiederholten Käufen zu motivieren.
+
+#### Abwandernde VIP-Kunden
+Diese Kunden haben entweder eine signifikante Anzahl an Käufen getätigt (mehr als 28), wie im Segment 412, oder sie haben beträchtliche Summen ausgegeben (über dem dritten Quartil), haben jedoch seit über einem Jahr nichts mehr gekauft. Der Gesamtanteil dieser Kunden beträgt 0,6% und die Gesamtzahl beläuft sich auf 7.908 Kunden.
+```python
+411	1883	Abwandernde VIP
+42	412	5983	Abwandernde VIP
+44	421	36	Abwandernde VIP
+48	431	6	Abwandernde VIP
+```
