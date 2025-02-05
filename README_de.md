@@ -347,3 +347,27 @@ Das Segment der "schlafenden VIP-Kunden" ist für das Geschäft wichtig, da dies
 - **Erhöhung der Dringlichkeit durch begrenzte Angebote:** Dringende Aktionen anbieten, um Kunden zu sofortigen Käufen zu motivieren. Zum Beispiel Rabattangebote nur für die nächsten 48 Stunden oder exklusive Geschenke bei der nächsten Bestellung.
 - **Gamifizierung mit hohen Belohnungsstufen:** Ein Spiel oder eine Lotterie mit großen Preisen organisieren, die nur für diese Kundengruppe bestimmt sind. Das kann ihr Interesse wecken und sie motivieren, zurückzukehren.
 Schlafende VIP-Kunden sind eine Gruppe, auf die erhebliche Anstrengungen konzentriert werden sollten, da ihre Rückkehr einen wesentlichen Einfluss auf den Umsatz des Unternehmens haben kann. Es ist wichtig, schnell zu handeln und etwas wirklich Wertvolles anzubieten, um diese Kunden erneut zu interessieren und ihre Aktivität wiederherzustellen.
+
+#### Aktive Kleinkunden 
+Kunden, die in den letzten 100 Tagen Käufe getätigt haben, jedoch für kleine Beträge. Der Gesamtanteil dieser Kunden beträgt 10,4 % und die Gesamtzahl beläuft sich auf 141.574 Kunden
+```python
+6	124	15	Aktive Kleinkunden
+9	133	26699	Aktive Kleinkunden
+10	134	2600	Aktive Kleinkunden
+12	143	4703	Aktive Kleinkunden
+13	144	15296	Aktive Kleinkunden
+20	224	79	Aktive Kleinkunden
+23	233	47796	Aktive Kleinkunden
+24	234	8649	Aktive Kleinkunden
+25	243	4800	Aktive Kleinkunden
+26	244	30937	Aktive Kleinkunden
+```
+Für das Segment "Aktive Klein-Kunden" ist es wichtig, Strategien zu entwickeln, die keine erheblichen Investitionen erfordern, aber dennoch das Kaufvolumen dieser Kunden erhöhen, indem ihr Interesse geweckt und der durchschnittliche Warenkorb erhöht wird:
+
+- **Aktionen und Sonderangebote:** Zum Beispiel kann die Aktion "Kaufe 4, erhalte das 5. Produkt gratis" Aufmerksamkeit erregen. Dies fördert die Erhöhung der Produktanzahl pro Kauf und kann auch die Kaufhäufigkeit steigern, wenn Kunden das Angebot nutzen möchten.
+- **Personalisierte Rabatte:** Die Nutzung von Daten über frühere Käufe, um personalisierte Rabatte anzubieten, kann Kunden motivieren, mehr zu kaufen. Zum Beispiel ein Rabattangebot für Produkte, die sie angesehen, aber nicht gekauft haben.
+- **Loyalitätsprogramme:** Die Einführung eines Treueprogramms, das Kunden für wiederholte Käufe belohnt, kann ihre Bindung erhöhen und zu größeren Käufen anregen. Zum Beispiel das Sammeln von Punkten, die gegen Rabatte oder Produkte eingetauscht werden können.
+- **Exklusiver Inhalt und Angebote:** Das Angebot von exklusivem Inhalt oder Produkten nur für Mitglieder eines bestimmten Programms kann ein Gefühl der Exklusivität schaffen und das Interesse an größeren Käufen wecken.
+- **Feedback und Umfragen:** Das Durchführen von Umfragen unter diesen Kunden, um ihre Präferenzen und Interessen zu ermitteln, kann helfen, die Marketingstrategie an ihre Bedürfnisse anzupassen, was wiederum ihre Ausgaben erhöhen kann.
+Diese Ansätze helfen, die Kundenbindung zu erhöhen und möglicherweise die Kunden von der Kategorie der kleinen zu mittleren oder großen Käufern zu überführen, ohne erhebliche finanzielle Investitionen.
+
